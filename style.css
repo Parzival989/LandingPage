@@ -1,6 +1,13 @@
+/** Vergleich https://kifahhassan.github.io/landing-page/*
 /*########################### styles #########################################*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .header,
-.heroMainTextContainer {
+.Hero,
+.headerContainer {
   background-color: #1f2937;
 }
 
@@ -43,22 +50,33 @@ body {
   padding: 0;
 }
 
-.container {
+.headerContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding: 0px 200px 0px 200px;
+  gap: 25px;
+}
+
+.Hero,
+.header {
+  flex: 1;
 }
 
 /*############################  Header Layout */
 .header {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
 }
 
+.Logo {
+  flex: 1;
+}
+
 .links {
+  flex: 1;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 8px;
 }
 
@@ -66,6 +84,9 @@ body {
 
 .Hero {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 50px;
 }
 
 .heroMainTextContainer {
@@ -73,6 +94,15 @@ body {
   flex-direction: column;
 }
 
-.HeroSecondaryText {
+.image {
+  align-self: center;
   flex: 1;
+}
+
+.heroMainTextContainer {
+  flex: 1;
+}
+
+.signUpButton {
+  width: 100px;
 }
