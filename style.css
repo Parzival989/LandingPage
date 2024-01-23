@@ -7,8 +7,14 @@
 
 .header,
 .Hero,
-.headerContainer {
+.headerContainer,
+.footer {
   background-color: #1f2937;
+}
+
+.footer {
+  color: #e5e7eb;
+  font-size: 12px;
 }
 
 a {
@@ -40,6 +46,7 @@ img {
 .signUpButton {
   background-color: #3882f6;
   color: #f9faf8;
+  border: 2px solid #f9faf8;
 }
 
 /*########################### Layout #########################################*/
@@ -50,10 +57,16 @@ body {
   padding: 0;
 }
 
-.headerContainer {
+.overallLayout {
   display: flex;
   flex-direction: column;
   padding: 0px 200px 0px 200px;
+  gap: 25px;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
   gap: 25px;
 }
 
@@ -96,6 +109,7 @@ body {
 
 .image {
   align-self: center;
+  padding: 0px 25px 0px 0px;
   flex: 1;
 }
 
@@ -105,4 +119,99 @@ body {
 
 .signUpButton {
   width: 100px;
+}
+
+/* randomSection */
+
+.randomSection {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.randomTextHeader {
+  align-self: center;
+}
+
+.randomSectionRow {
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  gap: 10px;
+}
+
+.randomSectionItem {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.item {
+  flex: 1 1 0;
+}
+
+/* quoteSection */
+
+.quoteSection {
+  background-color: #e5e7eb;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.signature {
+  font-weight: bold;
+  align-self: flex-end;
+}
+
+/* Call to action */
+
+.callToActionSection {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+
+.callToActionSectionContainer {
+  display: flex;
+  flex-direction: row;
+  background-color: blue;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex: 0 0 50%;
+  gap: 60px;
+}
+
+.smallContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.smallContainer > * {
+  flex: 1;
+}
+
+.callToActionButton {
+}
+
+.callToActionHeader {
+  color: white;
+  font-size: 20px;
+}
+
+.callToActionText {
+  color: white;
+  font-size: 12px;
+}
+
+/* Footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 30px;
 }
